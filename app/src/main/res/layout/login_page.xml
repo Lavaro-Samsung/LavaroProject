@@ -7,9 +7,6 @@
     android:background="#474745"
     tools:context=".MainActivity">
 
-    ###android:scaleType="centerCrop"
-
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="259dp"
@@ -32,7 +29,7 @@
         android:textColor="#AFA9A9"
         android:textColorHint="#65000000"
         android:backgroundTint="#868686"
-        android:background="@drawable/button_states"
+        android:background="@drawable/custom_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -48,7 +45,7 @@
         android:ems="10"
         android:hint="Enter password"
         android:backgroundTint="#868686"
-        android:background="@drawable/button_states"
+        android:background="@drawable/custom_button"
         android:inputType="textPassword"
         android:padding="10dp"
         android:textColorHint="#65000000"
@@ -64,7 +61,7 @@
         android:layout_width="310dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
-        android:background="@drawable/button_states"
+        android:background="@drawable/custom_button"
         android:text="Войти"
         android:textAlignment="center"
         android:textColor="@android:color/black"
@@ -81,16 +78,15 @@
         android:layout_width="310dp"
         android:layout_height="50dp"
         android:layout_marginBottom="20dp"
-        android:background="@drawable/button_states"
-        android:backgroundTint="#FF0000"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="#06AD17"
         android:text="Зарегистрироваться"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:strokeWidth="10dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
