@@ -11,9 +11,8 @@
         android:layout_width="170px"
         android:layout_height="170px"
         android:contentDescription="@string/app_name"
-        android:src="@drawable/lavaro_logo12"
-        android:scaleType="centerInside"
-        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/lavaro_logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.953"
@@ -32,14 +31,14 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/imageButton"
-        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintHorizontal_bias="0.783"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.025" />
+        app:layout_constraintVertical_bias="0.023" />
 
     <LinearLayout
-        android:layout_width="354dp"
-        android:layout_height="598dp"
+        android:layout_width="388dp"
+        android:layout_height="621dp"
         android:background="@drawable/custom_back"
         android:backgroundTint="#CCCCCC"
         app:layout_constraintBottom_toBottomOf="parent"
