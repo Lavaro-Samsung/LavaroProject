@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/lavaro_logo" />
 
     <EditText
-        android:id="@+id/Login"
+        android:id="@+id/loginEdit"
         android:layout_width="310dp"
         android:layout_height="50dp"
         android:layout_marginTop="50dp"
@@ -38,7 +38,7 @@
         app:layout_constraintVertical_bias="0.022" />
 
     <EditText
-        android:id="@+id/Password"
+        android:id="@+id/passwordEdit"
         android:layout_width="310dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
@@ -53,11 +53,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Login"
+        app:layout_constraintTop_toBottomOf="@+id/loginEdit"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/enter"
+        android:id="@+id/logInButton"
         android:layout_width="310dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
@@ -70,11 +70,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Password"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEdit"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        android:id="@+id/register"
+        android:id="@+id/registerButton"
         android:layout_width="310dp"
         android:layout_height="50dp"
         android:layout_marginBottom="20dp"
