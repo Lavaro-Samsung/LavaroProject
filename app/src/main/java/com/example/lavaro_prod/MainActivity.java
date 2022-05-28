@@ -65,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
                     Log.i("PASS", "Password is right");
                     if(databaseWorker.isCapitalist(insertedLogin)){
                         Intent goToShowingActivity = new Intent(getApplicationContext(), PersonShowActivity.class);
+                        goToShowingActivity.putExtra("login" , insertedLogin);
                         startActivity(goToShowingActivity);}
                     else if(databaseWorker.isWorker(insertedLogin)){
                         Intent goToChatActivity = new Intent(getApplicationContext(), ChatActivity.class);

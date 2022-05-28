@@ -16,6 +16,8 @@ public interface WorkingWithDatabase {
 
     public Worker getWorkerByName(String login);
 
+    public Capitalist getCapitalistByName(String login);
+
 
 
 

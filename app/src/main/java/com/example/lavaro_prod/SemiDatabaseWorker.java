@@ -68,5 +68,20 @@ public class SemiDatabaseWorker implements WorkingWithDatabase{
         }
         return result;
     }
+
+    @Override
+    public Capitalist getCapitalistByName(String login) {
+        Capitalist result = null;
+
+        for (Capitalist capitalist: SemiDatabase.kindaDatabaseOfCapitalists) {
+            if (capitalist.getLogin().equals(login)){
+                result = capitalist;
+                break;
+            }
+        }
+        return result;
+    }
+
+
 }
 
