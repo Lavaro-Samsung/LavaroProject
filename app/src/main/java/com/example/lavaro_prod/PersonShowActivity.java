@@ -31,6 +31,7 @@ public class PersonShowActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent goToForm = new Intent(getApplicationContext(), FormActivity.class);
                 goToForm.putExtra("login", login);
+                goToForm.putExtra("isCapitalist", true);
                 startActivity(goToForm);
             }
         });
@@ -38,7 +39,9 @@ public class PersonShowActivity extends AppCompatActivity {
         toFilters.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent goToFilters = new Intent(getApplicationContext(), FiltersActivity.class);
+                goToFilters.putExtra("login", login);
+                startActivity(goToFilters);
 
             }
         });

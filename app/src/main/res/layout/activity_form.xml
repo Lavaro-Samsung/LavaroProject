@@ -94,7 +94,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
-        android:id="@+id/backToListOfWorkers"
+        android:id="@+id/backToListOfWorkersFromForm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back"
@@ -111,7 +111,7 @@
         android:layout_height="wrap_content"
         android:text="Watch Others forms"
         app:layout_constraintBottom_toTopOf="@+id/constraintLayout"
-        app:layout_constraintEnd_toStartOf="@+id/backToListOfWorkers"
+        app:layout_constraintEnd_toStartOf="@+id/backToListOfWorkersFromForm"
         app:layout_constraintHorizontal_bias="0.034"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
