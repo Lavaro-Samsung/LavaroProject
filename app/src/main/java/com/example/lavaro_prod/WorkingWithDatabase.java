@@ -18,6 +18,11 @@ public interface WorkingWithDatabase {
 
     public Capitalist getCapitalistByName(String login);
 
+    public boolean isLoginPresentedInAnyDatabase(String login);
+
+    public void addWorkerToADatabase(Worker worker);
+
+    public void addCapitalistToADatabase(Capitalist capitalist);
 
 
 

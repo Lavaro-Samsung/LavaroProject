@@ -82,6 +82,20 @@ public class SemiDatabaseWorker implements WorkingWithDatabase{
         return result;
     }
 
+    @Override
+    public boolean isLoginPresentedInAnyDatabase(String login) {
+        return (getPasswordByLogin(login) != null);
+    }
+
+    @Override
+    public void addWorkerToADatabase(Worker worker) {
+        SemiDatabase.kindaDatabaseOfWorkers.add(worker);
+    }
+
+    @Override
+    public void addCapitalistToADatabase(Capitalist capitalist) {
+        SemiDatabase.kindaDatabaseOfCapitalists.add(capitalist);
+    }
 
 }
 

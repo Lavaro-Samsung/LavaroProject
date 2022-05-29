@@ -44,6 +44,15 @@ public class FormActivity extends AppCompatActivity {
             }
         });
 
+        Button toOthersForms = findViewById(R.id.toFormsList);
+
+        toOthersForms.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
+
 
 
     }

@@ -18,7 +18,7 @@
         app:srcCompat="@drawable/lavaro_logo" />
 
     <EditText
-        android:id="@+id/Login"
+        android:id="@+id/newLogin"
         android:layout_width="310dp"
         android:layout_height="50dp"
         android:layout_marginTop="50dp"
@@ -37,7 +37,7 @@
         app:layout_constraintVertical_bias="0.022" />
 
     <EditText
-        android:id="@+id/Password"
+        android:id="@+id/newPassword"
         android:layout_width="310dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
@@ -52,37 +52,35 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Login"
+        app:layout_constraintTop_toBottomOf="@+id/newLogin"
         app:layout_constraintVertical_bias="0.061" />
 
     <TextView
-        android:id="@+id/nick"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
         android:text="Придумайте никнейм"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/Login"
+        app:layout_constraintBottom_toTopOf="@+id/newLogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/passw"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="5dp"
         android:text="Придумайте пароль"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/Password"
+        app:layout_constraintBottom_toTopOf="@+id/newPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Login"
+        app:layout_constraintTop_toBottomOf="@+id/newLogin"
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/reg_cont"
+        android:id="@+id/continueRegistrationButton"
         android:layout_width="310dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
@@ -95,10 +93,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Password" />
+        app:layout_constraintTop_toBottomOf="@+id/newPassword" />
 
     <Button
-        android:id="@+id/back"
+        android:id="@+id/backFromRegistration"
         android:layout_width="310dp"
         android:layout_height="50dp"
         android:layout_marginBottom="20dp"
@@ -121,12 +119,12 @@
 
         android:minHeight="48dp"
         android:text="Are You A Capitalist"
-        app:layout_constraintBottom_toTopOf="@+id/nick"
+        app:layout_constraintBottom_toTopOf="@+id/newLogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.294"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <CheckBox
         android:id="@+id/workerCheckBox"
@@ -136,12 +134,12 @@
         android:layout_marginBottom="26dp"
         android:checked="true"
         android:minHeight="48dp"
-        android:text="Are You A worker"
-        app:layout_constraintBottom_toTopOf="@+id/Login"
+        android:text="Are You A Worker"
+        app:layout_constraintBottom_toTopOf="@+id/newLogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/capitalistCheckBox"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

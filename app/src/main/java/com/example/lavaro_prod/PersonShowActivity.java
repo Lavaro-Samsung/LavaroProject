@@ -11,7 +11,7 @@ import android.widget.Button;
 
 public class PersonShowActivity extends AppCompatActivity {
 
-    private MyAdapter adapter = new MyAdapter(this);
+    private WorkersListAdapter adapter = new WorkersListAdapter(this);
     SemiDatabaseWorker databaseWorker = new SemiDatabaseWorker();
 
     @Override
