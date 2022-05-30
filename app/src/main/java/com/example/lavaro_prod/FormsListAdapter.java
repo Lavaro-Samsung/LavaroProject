@@ -7,7 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -18,9 +17,11 @@ public class FormsListAdapter extends RecyclerView.Adapter<FormsListAdapter.Form
 
     private final Context context;
     private List<Capitalist> capitalists;
+    private String userName;
 
-    public FormsListAdapter(Context context) {
+    public FormsListAdapter(Context context, String capName) {
         this.context = context;
+        this.userName = capName;
     }
 
     public void setPersons(List<Capitalist> capitalists ) {
@@ -43,7 +44,12 @@ public class FormsListAdapter extends RecyclerView.Adapter<FormsListAdapter.Form
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //DO SOMETHING HERE
+               Intent goToForm = new Intent(context, FormActivity.class);
+                goToForm.putExtra("isCapitalist", context.getClass().getName().equals("FormShowActivity"));
+                goToForm.putExtra("login", capitalist.login);
+                goToForm.putExtra("canRedact", false);
+                goToForm.putExtra("userName", userName);
+               context.startActivity(goToForm);
             }
         });
 

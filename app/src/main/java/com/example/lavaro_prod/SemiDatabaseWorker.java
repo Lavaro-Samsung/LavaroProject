@@ -25,8 +25,8 @@ public class SemiDatabaseWorker implements WorkingWithDatabase{
     }
 
     @Override
-    public Worker getWorkerByNumberInList(int number) {
-        return SemiDatabase.kindaDatabaseOfWorkers.get(number);
+    public ArrayList<Capitalist> getListOfAllCapitalists() {
+        return SemiDatabase.kindaDatabaseOfCapitalists;
     }
 
     @Override
@@ -71,7 +71,7 @@ public class SemiDatabaseWorker implements WorkingWithDatabase{
 
     @Override
     public Capitalist getCapitalistByName(String login) {
-        Capitalist result = null;
+        Capitalist result = new Capitalist("aaaaaa", "aaaaa", "aaaa");
 
         for (Capitalist capitalist: SemiDatabase.kindaDatabaseOfCapitalists) {
             if (capitalist.getLogin().equals(login)){

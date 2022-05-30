@@ -31,6 +31,7 @@ public class ChatActivity extends AppCompatActivity {
                 Intent goToProfileActivity = new Intent(getApplicationContext(), ProfileActivity.class);
                 goToProfileActivity.putExtra("info", thisWorker.getInfo());
                 goToProfileActivity.putExtra("login", workersLogin);
+                goToProfileActivity.putExtra("isCapitalist", false);
                 startActivity(goToProfileActivity);
             }
         });

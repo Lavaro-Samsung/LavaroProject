@@ -8,7 +8,7 @@ public interface WorkingWithDatabase {
 
     public ArrayList<Worker> getListOfAllWorkers();
 
-    public Worker getWorkerByNumberInList(int number);
+    public ArrayList<Capitalist> getListOfAllCapitalists();
 
     public boolean isWorker(String login);
 

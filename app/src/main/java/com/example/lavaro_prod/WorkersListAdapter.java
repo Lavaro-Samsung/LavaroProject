@@ -18,9 +18,11 @@ public class WorkersListAdapter extends RecyclerView.Adapter<WorkersListAdapter.
 
     private final Context context;
     private List<Worker> workers;
+    private String myLogin;
 
-    public WorkersListAdapter(Context context) {
+    public WorkersListAdapter(Context context, String myLogin) {
         this.context = context;
+        this.myLogin = myLogin;
     }
 
     public void setPersons(List<Worker> workers) {
@@ -43,10 +45,11 @@ public class WorkersListAdapter extends RecyclerView.Adapter<WorkersListAdapter.
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(context, "Yep! You clicked", Toast.LENGTH_LONG).show();
                 Intent goToTheProfile = new Intent(context, ProfileActivity.class);
                 goToTheProfile.putExtra("login", worker.getLogin());
                 goToTheProfile.putExtra("info", worker.getInfo());
+                goToTheProfile.putExtra("isCapitalist", true);
+                goToTheProfile.putExtra("capName", myLogin);
 
                 context.startActivity(goToTheProfile);
             }
