@@ -15,7 +15,8 @@
         <entry key="app/src/main/res/drawable/custom_button.xml" value="0.1" />
         <entry key="app/src/main/res/layout/login_page.xml" value="0.31023550724637683" />
         <entry key="app/src/main/res/layout/main_search_page.xml" value="0.31023550724637683" />
-        <entry key="app/src/main/res/layout/profile_and_settings.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/profile_and_settings.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/recycler_worker.xml" value="0.33" />
         <entry key="app/src/main/res/layout/register_page.xml" value="0.31023550724637683" />
       </map>
     </option>
