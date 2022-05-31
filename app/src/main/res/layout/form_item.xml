@@ -1,44 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/rootCardView"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_margin="3dp"
-    android:elevation="5dp"
-    app:cardBackgroundColor="@android:color/white"
-    app:cardCornerRadius="5dp">
-
+    android:layout_height="150dp"
+    android:background="@drawable/custom_back"
+    android:backgroundTint="#CCCCCC"
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="20dp" />
+    <TextView
+        android:id="@+id/loginViewInFormItem"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/wageViewInFormItem"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/infoViewInFormItem"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="5dp">
-
-        <TextView
-            android:id="@+id/loginViewInFormItem"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:padding="5dp" />
-        <TextView
-            android:id="@+id/wageViewInFormItem"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:padding="5dp" />
-
-        <TextView
-            android:id="@+id/infoViewInFormItem"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:padding="5dp" />
-
-
-    </LinearLayout>
-
-
-</androidx.cardview.widget.CardView>
+        android:text="TextView" />
+</LinearLayout>

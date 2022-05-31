@@ -3,27 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Oleg/AndroidStudioProjects/LavaroProject23/app/src/main/res/layout/activity_chat.xml" value="0.25" />
-        <entry key="..\:/Users/Oleg/AndroidStudioProjects/LavaroProject23/app/src/main/res/layout/activity_filters.xml" value="0.278125" />
-        <entry key="..\:/Users/Oleg/AndroidStudioProjects/LavaroProject23/app/src/main/res/layout/activity_form.xml" value="0.2" />
-        <entry key="..\:/Users/Oleg/AndroidStudioProjects/LavaroProject23/app/src/main/res/layout/activity_form_show.xml" value="0.2625" />
-        <entry key="..\:/Users/Oleg/AndroidStudioProjects/LavaroProject23/app/src/main/res/layout/activity_person_show.xml" value="0.25" />
-        <entry key="..\:/Users/Oleg/AndroidStudioProjects/LavaroProject23/app/src/main/res/layout/activity_profile.xml" value="0.25" />
-        <entry key="..\:/Users/Oleg/AndroidStudioProjects/LavaroProject23/app/src/main/res/layout/activity_registering.xml" value="0.25" />
-        <entry key="..\:/Users/Oleg/AndroidStudioProjects/LavaroProject23/app/src/main/res/layout/form_item.xml" value="0.278125" />
-        <entry key="..\:/Users/Oleg/AndroidStudioProjects/LavaroProject23/app/src/main/res/layout/list_item.xml" value="0.25" />
-        <entry key="..\:/Users/Oleg/AndroidStudioProjects/LavaroProject23/app/src/main/res/layout/login_page.xml" value="0.25" />
-        <entry key="..\:/Users/Oleg/AndroidStudioProjects/LavaroProject23/app/src/main/res/layout/main_search_page.xml" value="0.25" />
-        <entry key="..\:/Users/Oleg/AndroidStudioProjects/LavaroProject23/app/src/main/res/layout/profile_and_settings.xml" value="0.25" />
-        <entry key="..\:/Users/Oleg/AndroidStudioProjects/LavaroProject23/app/src/main/res/layout/register_page.xml" value="0.278125" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Lavaro_Prod/app/src/main/res/drawable/button_states.xml" value="0.1905" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Lavaro_Prod/app/src/main/res/drawable/custom_back.xml" value="0.205" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Lavaro_Prod/app/src/main/res/drawable/custom_button.xml" value="0.174" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/Lavaro_Prod/app/src/main/res/layout/activity_chat.xml" value="0.22447916666666667" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/Lavaro_Prod/app/src/main/res/layout/activity_form.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lavaro_Prod/app/src/main/res/layout/activity_chat.xml" value="0.33" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lavaro_Prod/app/src/main/res/layout/activity_filters.xml" value="0.25" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lavaro_Prod/app/src/main/res/layout/activity_form.xml" value="0.25" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lavaro_Prod/app/src/main/res/layout/activity_form_show.xml" value="0.22447916666666667" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Lavaro_Prod/app/src/main/res/layout/activity_main.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Lavaro_Prod/app/src/main/res/layout/activity_person_show.xml" value="0.22447916666666667" />
-        <entry key="..\:/Users/user/AndroidStudioProjects/Lavaro_Prod/app/src/main/res/layout/activity_profile.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lavaro_Prod/app/src/main/res/layout/activity_profile.xml" value="0.33" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lavaro_Prod/app/src/main/res/layout/activity_registering.xml" value="0.22447916666666667" />
+        <entry key="..\:/Users/user/AndroidStudioProjects/Lavaro_Prod/app/src/main/res/layout/form_item.xml" value="0.33" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Lavaro_Prod/app/src/main/res/layout/list_item.xml" value="0.33" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Lavaro_Prod/app/src/main/res/layout/login_page.xml" value="0.18" />
         <entry key="..\:/Users/user/AndroidStudioProjects/Lavaro_Prod/app/src/main/res/layout/main_search_page.xml" value="0.2" />
