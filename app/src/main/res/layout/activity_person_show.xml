@@ -22,7 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="23dp"
-        android:text="Заявка"
+        android:text="Форма"
         app:layout_constraintBottom_toTopOf="@+id/listOfWorkers"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.272"
