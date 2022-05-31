@@ -11,7 +11,7 @@ import android.widget.Button;
 
 public class PersonShowActivity extends AppCompatActivity {
 
-    private MyAdapter adapter = new MyAdapter(this);
+    private WorkersListAdapter adapter;
     SemiDatabaseWorker databaseWorker = new SemiDatabaseWorker();
 
     @Override
@@ -23,6 +23,8 @@ public class PersonShowActivity extends AppCompatActivity {
 
         RecyclerView showOfWorkers = findViewById(R.id.listOfWorkers);
 
+        adapter = new WorkersListAdapter(this, login);
+
         Button toForm = findViewById(R.id.formButton);
         Button toFilters = findViewById(R.id.searchButton);
 
@@ -31,6 +33,8 @@ public class PersonShowActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent goToForm = new Intent(getApplicationContext(), FormActivity.class);
                 goToForm.putExtra("login", login);
+                goToForm.putExtra("isCapitalist", true);
+                goToForm.putExtra("canRedact", true);
                 startActivity(goToForm);
             }
         });
@@ -38,7 +42,9 @@ public class PersonShowActivity extends AppCompatActivity {
         toFilters.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent goToFilters = new Intent(getApplicationContext(), FiltersActivity.class);
+                goToFilters.putExtra("login", login);
+                startActivity(goToFilters);
 
             }
         });

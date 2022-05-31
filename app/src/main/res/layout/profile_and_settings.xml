@@ -6,7 +6,7 @@
     android:background="#474745">
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/backFromProfile"
         android:layout_width="170px"
         android:layout_height="170px"
         android:contentDescription="@string/app_name"
@@ -29,7 +29,7 @@
         android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageButton"
+        app:layout_constraintEnd_toStartOf="@+id/backFromProfile"
         app:layout_constraintHorizontal_bias="0.783"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"

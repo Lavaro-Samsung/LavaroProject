@@ -8,7 +8,7 @@ public interface WorkingWithDatabase {
 
     public ArrayList<Worker> getListOfAllWorkers();
 
-    public Worker getWorkerByNumberInList(int number);
+    public ArrayList<Capitalist> getListOfAllCapitalists();
 
     public boolean isWorker(String login);
 
@@ -18,6 +18,11 @@ public interface WorkingWithDatabase {
 
     public Capitalist getCapitalistByName(String login);
 
+    public boolean isLoginPresentedInAnyDatabase(String login);
+
+    public void addWorkerToADatabase(Worker worker);
+
+    public void addCapitalistToADatabase(Capitalist capitalist);
 
 
 
