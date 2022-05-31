@@ -25,7 +25,7 @@
         android:id="@+id/textView"
         android:layout_width="187dp"
         android:layout_height="64dp"
-        android:text="Profile"
+        android:text="Профиль"
         android:textAlignment="center"
         android:textAllCaps="false"
         android:textSize="40sp"
@@ -48,51 +48,53 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView">
 
-        <TextView
-            android:id="@+id/loginTextOnProfile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="@drawable/custom_back"
-            android:backgroundTint="#999999"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.027" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/const_lay2"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="160dp"
             android:background="@drawable/custom_back"
-            android:backgroundTint="#999999"
+            android:backgroundTint="#555555"
             android:orientation="vertical"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.503"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/loginTextOnProfile"
-            app:layout_constraintVertical_bias="0.034">
+            app:layout_constraintTop_toTopOf="parent">
 
             <TextView
+                android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Information" />
+                android:layout_marginTop="4dp"
+                android:text="Обо мне:"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/informationTextOnProfile"
+                android:id="@+id/infoInForm"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="о челике"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
 
-        </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <Button
             android:id="@+id/edit_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:text="edit"
+            android:text="Редактировать"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.939"
             app:layout_constraintStart_toStartOf="parent"
@@ -105,7 +107,7 @@
             android:layout_marginStart="60dp"
             android:layout_marginBottom="24dp"
             android:backgroundTint="#06AD17"
-            android:text="accept"
+            android:text="Принять"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -115,7 +117,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
             android:backgroundTint="#FF0000"
-            android:text="deny"
+            android:text="Отклонить"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.559"

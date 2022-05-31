@@ -21,7 +21,7 @@
         android:id="@+id/newLogin"
         android:layout_width="310dp"
         android:layout_height="50dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="68dp"
         android:background="@drawable/custom_button"
         android:backgroundTint="#868686"
         android:hint="Enter login"
@@ -29,18 +29,16 @@
         android:padding="10dip"
         android:textColor="#AFA9A9"
         android:textColorHint="#65000000"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.022" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
         android:id="@+id/newPassword"
         android:layout_width="310dp"
         android:layout_height="50dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/custom_button"
         android:backgroundTint="#868686"
         android:ems="10"
@@ -48,12 +46,10 @@
         android:inputType="textPassword"
         android:padding="10dp"
         android:textColorHint="#65000000"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/newLogin"
-        app:layout_constraintVertical_bias="0.061" />
+        app:layout_constraintTop_toBottomOf="@+id/newLogin" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -83,7 +79,7 @@
         android:id="@+id/continueRegistrationButton"
         android:layout_width="310dp"
         android:layout_height="50dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         android:background="@drawable/custom_button"
         android:backgroundTint="#ffffff"
         android:text="Продолжить"
@@ -113,33 +109,28 @@
 
     <CheckBox
         android:id="@+id/capitalistCheckBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
         android:checked="false"
-
         android:minHeight="48dp"
-        android:text="Are You A Capitalist"
-        app:layout_constraintBottom_toTopOf="@+id/newLogin"
+        android:text="Я работодатель"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.294"
+        app:layout_constraintHorizontal_bias="0.191"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/continueRegistrationButton" />
 
     <CheckBox
         android:id="@+id/workerCheckBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="1dp"
-        android:layout_marginBottom="26dp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
         android:checked="true"
         android:minHeight="48dp"
-        android:text="Are You A Worker"
-        app:layout_constraintBottom_toTopOf="@+id/newLogin"
+        android:text="Я рабочий"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/capitalistCheckBox"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintHorizontal_bias="0.804"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/continueRegistrationButton" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
