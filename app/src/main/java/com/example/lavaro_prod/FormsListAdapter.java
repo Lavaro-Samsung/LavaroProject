@@ -1,5 +1,6 @@
 package com.example.lavaro_prod;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
@@ -49,6 +50,7 @@ public class FormsListAdapter extends RecyclerView.Adapter<FormsListAdapter.Form
                 goToForm.putExtra("login", capitalist.login);
                 goToForm.putExtra("canRedact", false);
                 goToForm.putExtra("userName", userName);
+                goToForm.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                context.startActivity(goToForm);
             }
         });
@@ -65,12 +67,13 @@ public class FormsListAdapter extends RecyclerView.Adapter<FormsListAdapter.Form
             super(itemView);
         }
 
+        @SuppressLint("SetTextI18n")
         public void setData(Capitalist capitalist) {
             TextView login = itemView.findViewById(R.id.loginViewInFormItem);
             login.setText(capitalist.getLogin());
 
             TextView wage = itemView.findViewById(R.id.wageViewInFormItem);
-            wage.setText(capitalist.getWage());
+            wage.setText(capitalist.job +"/"+capitalist.wage);
 
             TextView info = itemView.findViewById(R.id.infoViewInFormItem);
             info.setText(capitalist.getInfo());

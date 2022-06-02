@@ -24,6 +24,12 @@ public interface WorkingWithDatabase {
 
     public void addCapitalistToADatabase(Capitalist capitalist);
 
+    public void deleteWorkerByLogin(String login);
+
+    public void deleteCapitalistByLogin(String login);
+
+    public void addACapitalistToAWorkerByName(String loginOfWorker, String loginOfCapitalist);
+
 
 
 }

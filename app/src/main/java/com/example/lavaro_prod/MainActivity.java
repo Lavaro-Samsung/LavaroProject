@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String insertedLogin = loginText.getText().toString().toLowerCase(Locale.ROOT);
                 String insertedPassword = passwordText.getText().toString();
-                SemiDatabaseWorker databaseWorker= new SemiDatabaseWorker();
+                DatabaseWorker databaseWorker= new DatabaseWorker();
 
                 if(insertedLogin.equals("")){
                     Toast.makeText(getApplicationContext(), "Insert Login", Toast.LENGTH_LONG).show();

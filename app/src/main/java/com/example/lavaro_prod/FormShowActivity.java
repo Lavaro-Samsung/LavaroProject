@@ -4,12 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 public class FormShowActivity extends AppCompatActivity {
 
-    private FormsListAdapter adapter;
-    private final SemiDatabaseWorker databaseWorker = new SemiDatabaseWorker();
+    private final DatabaseWorker databaseWorker = new DatabaseWorker();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,15 +22,26 @@ public class FormShowActivity extends AppCompatActivity {
 
         RecyclerView showForms = findViewById(R.id.listOfOthersForms);
 
-        adapter = new FormsListAdapter(getApplicationContext(), login);
+        Button back = findViewById(R.id.backFromFormsShowingActivity);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent goBack = new Intent(getApplicationContext(), FormActivity.class);
+                goBack.putExtra("login", login);
+                goBack.putExtra("canRedact", true);
+                goBack.putExtra("isCapitalist", true);
+                startActivity(goBack);
+            }
+        });
+
+        FormsListAdapter adapter = new FormsListAdapter(getApplicationContext(), login);
         LinearLayoutManager linearLayout
                 = new LinearLayoutManager(getApplicationContext());
 
         showForms.setLayoutManager(linearLayout);
 
-        //I WILL CHANGE THIS TOO
         adapter.setPersons(databaseWorker.getListOfAllCapitalists());
-        //I WILL CHANGE THIS TOO
 
         showForms.setAdapter(adapter);
     }
